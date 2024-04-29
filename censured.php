@@ -25,7 +25,8 @@ $paragrafo = $_POST["paragrafo"];
 <body>
     <div>
         <?php
-        echo  $paragrafo;
+        echo  "<div> il testo  inserito è: $paragrafo </div>";
+        echo 'la lunghezza del test è di: '  . strlen($paragrafo) . ' caratteri';
         ?>
     </div>
 </body>
