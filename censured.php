@@ -1,3 +1,7 @@
+<?php
+$paragrafo = $_POST["paragrafo"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,12 +23,10 @@
 </head>
 
 <body>
-    <div class="container mb-3 my-3 ">
-        <form action="./censured.php" method="POST">
-            <label for="exampleFormControlTextarea1" class="form-label">Inserisci paragrafo</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="paragrafo"></textarea>
-            <input type="submit" value="Invia" class="btn btn-primary my-3 ">
-        </form>
+    <div>
+        <?php
+        echo  $paragrafo;
+        ?>
     </div>
 </body>
 
