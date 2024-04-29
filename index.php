@@ -21,8 +21,10 @@
 <body>
     <div class="container mb-3 my-3 ">
         <form action="./censured.php" method="POST">
-            <label for="exampleFormControlTextarea1" class="form-label">Inserisci paragrafo</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="paragrafo"></textarea>
+            <label for="paragrafo" class="form-label">Inserisci paragrafo</label>
+            <textarea class="form-control" id="paragrafo" rows="3" name="paragrafo"></textarea>
+            <label for="toCensure" class="form-label mt-3 ">Inserisci parola da censurare</label>
+            <input type="text" class="form-control mb-3" name="toCensure" id="toCensure" >
             <input type="submit" value="Invia" class="btn btn-primary my-3 ">
         </form>
     </div>

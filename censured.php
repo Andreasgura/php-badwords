@@ -1,5 +1,8 @@
 <?php
 $paragrafo = $_POST["paragrafo"];
+$toCensure = $_POST['toCensure'];
+$censured = str_replace($toCensure,'***', $paragrafo);
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +26,12 @@ $paragrafo = $_POST["paragrafo"];
 </head>
 
 <body>
-    <div>
+    <div class="container my-3 ">
         <?php
         echo  "<div> il testo  inserito è: $paragrafo </div>";
         echo 'la lunghezza del test è di: '  . strlen($paragrafo) . ' caratteri';
+        echo '<div> il testo censurato è: ' . $censured . '</div>';
+        echo '<div> la lunghezza del testo censurato è di: ' . strlen($censured) . ' caratteri</div>';
         ?>
     </div>
 </body>
